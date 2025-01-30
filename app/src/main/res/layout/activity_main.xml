@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="20dp"
     tools:context=".MainActivity">
 
     <TextView
@@ -14,9 +15,11 @@
         android:layout_marginStart="40dp"
         android:layout_marginTop="40dp"
         android:fontFamily="sans-serif"
-        android:text="Właściwości czcionki"
+        android:text="Wlaściwości czcionki"
         android:textSize="20sp"
         android:textStyle="bold"
+        android:background="#558B2F"
+        android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -27,6 +30,7 @@
         android:layout_marginStart="54dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="43dp"
+        android:min="12"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.736"
         app:layout_constraintStart_toStartOf="parent"
@@ -48,7 +52,21 @@ app:layout_constraintTop_toBottomOf="@+id/seekBar" />
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginTop="20dp"
-        android:text="TEKST"
+        android:text="Dzień dobry!"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textRozmiar" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="24dp"
+        android:background="#558B2F"
+        android:text=">>"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 </androidx.constraintlayout.widget.ConstraintLayout>
